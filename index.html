@@ -1,59 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Cartões Postais</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Cartões Postais</title>
 </head>
+
 <body>
-    <header>
-        <h1>Cartões Postais</h1>
-    </header>
+  <header>
+    <h1>Cartões Postais</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início da página</a></li>
+        <li><a href="#">EUA</a></li>
+        <li><a href="#">Brasil</a></li>
+        <li><a href="#">França</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
     <aside>
-        <form action="/">
-          <div class="input-control">
-            <label for="titulo">Nome do Local</label>
-            <input type="text" name="titulo" id="titulo" required />
+      <form action="/">
+        <div class="input">
+          <label for="titulo">Nome do Local</label>
+          <input type="text" name="titulo" id="titulo" />
+        </div>
+        <div class="input">
+          <label for="descricao">Descrição</label>
+          <input type="text" name="descricao" id="descricao" />
+        </div>
+        <div class="input">
+          <label for="imgUrl">URL da Imagem</label>
+          <input type="text" name="imgUrl" id="imgUrl" />
+        </div>
+        <div class="pais">
+          <label>País</label>
+          <div class="radioBtn">
+            <input type="radio" name="pais" id="eua" />
+            <label for="eua">EUA</label>
+            <input type="radio" name="pais" id="brasil" />
+            <label for="brasil">Brasil</label>
+            <input type="radio" name="pais" id="franca" />
+            <label for="franca">França</label>
           </div>
-          <div class="input-control">
-            <label for="descricao">Descrição: </label>
-            <input type="text" name="descricao" id="descricao" required />
-          </div>
-          <div class="input-control">
-            <label for="imgUrl">URL da Imagem do Local</label>
-            <input type="text" name="imgUrl" id="imgUrl" required />
-          </div>
-          <fieldset class="pais">
-            <legend>Região</legend>
-            <div class="radioBtn">
-              <input type="radio" name="pais" id="eua"/>
-              <label for="eua">EUA</label>
-              <input type="radio" name="pais" id="brasil" />
-              <label for="brasil">Brasil</label>
-              <input type="radio" name="pais" id="franca" />
-              <label for="franca">França</label>
-            </div>
-          </fieldset>
-          <div class="btn">
-            <button type="submit">Send</button>
-            <button type="reset">Reset</button>
-          </div>
-        </form>
-      </aside>
-      <main>
+        </div>
+        <div class="input-checkbox">
+          <input type="checkbox" name="agreement" id="agreement" />
+          <label>Li e aceito as condições</label>
+        </div>
+        <div class="btn">
+          <button type="submit">Enviar</button>
+          <button type="reset">Apagar</button>
+        </div>
+      </form>
+    </aside>
+    <div id="principal">
+      <section id=princ>
         <div class="card">
           <div class="local">
             <img src="https://www.aprendizdeviajante.com/wp-content/uploads/2010/10/grandcanyon.jpg"
               alt="Cadeia de montanhas - Grand-Canyon" />
           </div>
           <h3>Grand-Canyon</h3>
-          <h4>Região: Arizona</h4>
+          <h3>País: EUA</h3>
           <p>Parque nacional, formado por cadeias de montanhas de rocha vermelha</p>
         </div>
-    </main>
+      </section>
+    </div>
+  </main>
 
-<script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
-</html>    
+
+</html>

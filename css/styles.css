@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #02bbbb;
+  color: white;
+  padding: 20px;
+}
+
+body header h1 {
+  font-size: 1.875rem;
+}
+
+body header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.3125rem;
+}
+
+body header ul li {
+  list-style-type: none;
+}
+
+body header ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.625rem;
+  border-radius: 0.5625rem;
+  font-weight: bold;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+body header ul li a:hover {
+  background-color: red;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30vw 70vw;
+      grid-template-columns: 30vw 70vw;
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
+}
+
+body main aside {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 100vh;
+  background-color: #eaffd6;
+}
+
+body main aside form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  font-size: 1.12rem;
+}
+
+body main aside form .input {
+  margin: 0.9375rem 0;
+}
+
+body main aside form .input label {
+  display: block;
+}
+
+body main aside form .input input {
+  padding: 0.3rem;
+}
+
+body main aside form .input-checkbox {
+  margin: 1rem;
+}
+
+body main aside form .btn button {
+  padding: 1.12rem;
+  background: lightblue;
+  border-radius: .7rem;
+  font-weight: 500;
+}
+
+body main #principal {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 100vh;
+  max-height: 100%;
+  background-color: #dfffe9;
+}
+
+body main #principal section {
+  margin-top: 3.75rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+body main #principal section .card {
+  gap: 1.125rem;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+body main #principal section .card h3 {
+  font: 2.5rem;
+  text-align: center;
+}
+
+body main #principal section .local {
+  height: 21.875rem;
+  width: 100%;
+  overflow: hidden;
+  border: 0.625rem groove lightgray;
+  border-radius: 0.625rem;
+}
+
+body main #principal section .local img {
+  height: 21.875rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+body main #principal section .local img :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=styles.css.map */
