@@ -39,6 +39,6 @@ window.onload = () => {
         description.innerHTML = `<p>${descricao.value}</p>`;
         cartao.appendChild(description);
         
-        document.querySelector('#princ').appendChild(cartao)
+        document.querySelector('section').appendChild(cartao);
     })
 }
