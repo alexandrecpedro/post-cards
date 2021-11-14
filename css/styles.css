@@ -139,6 +139,7 @@ body main #principal section .card {
   gap: 1.125rem;
   margin-top: 2.5rem;
   text-align: center;
+  background-color: white;
 }
 
 body main #principal section .card h3 {
