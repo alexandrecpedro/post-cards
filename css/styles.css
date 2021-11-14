@@ -67,10 +67,6 @@ body main {
 }
 
 body main aside {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
   height: 100vh;
   background-color: #eaffd6;
 }
@@ -117,10 +113,6 @@ body main aside form .btn button {
 }
 
 body main #principal {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 1;
-  grid-row: 1;
   height: 100vh;
   max-height: 100%;
   background-color: #dfffe9;
@@ -130,7 +122,7 @@ body main #principal section {
   margin-top: 3.75rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr);
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
 }
